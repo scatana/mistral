@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const hbs = require('hbs');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -9,6 +10,13 @@ const usersRouter = require('./routes/users');
 
 const app = express();
 
+// view engine helpers
+const pkgInfo = require('./package.json');
+const assetsMountPoint = path.join('/assets', pkgInfo.version);
+hbs.registerHelper('asset', (assetPath) => {
+	return path.join(assetsMountPoint, assetPath);
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -17,7 +25,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(assetsMountPoint, express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
