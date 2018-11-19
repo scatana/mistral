@@ -15,7 +15,7 @@ module.exports = {
     {
       name: 'mistral-prod',
       script: './bin/www',
-      instances: 'max',
+      instances: 2,
       autorestart: true,
       watch: false,
       max_memory_restart: '256M',
