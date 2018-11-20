@@ -6,7 +6,7 @@ var router = express.Router();
  * the cookie should expire in one year; this happens for all routes that this
  * router handles
  */
-router.use(function (req, res, next) {
+router.use((req, res, next) => {
     var requestedLocale = req.baseUrl.split('/')[1];
     var currentLocale = req.getLocale();
 
@@ -21,8 +21,6 @@ router.use(function (req, res, next) {
     next();
 });
 
-router.get('/', function (req, res) {
-    res.render('index');
-});
+router.get('/', (req, res) => res.render('index'));
 
 module.exports = router;

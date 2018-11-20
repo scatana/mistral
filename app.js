@@ -24,9 +24,9 @@ i18n.configure({
 // view engine helpers
 const pkgInfo = require('./package.json');
 const assetsMountPoint = path.join('/assets', pkgInfo.version);
-hbs.registerHelper('asset', (assetPath) => {
-	return path.join(assetsMountPoint, assetPath);
-});
+hbs.registerHelper('asset', assetPath => path.join(assetsMountPoint, assetPath));
+hbs.registerHelper('l', i18n.__);
+hbs.registerHelper('ln', i18n.__n);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
