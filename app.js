@@ -6,8 +6,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const rootRouter = require('./routes/root');
+const mainRouter = require('./routes/main');
 
 const app = express();
 
@@ -42,8 +42,8 @@ app.use(cookieParser());
 app.use(i18n.init);
 app.use(assetsMountPoint, express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', rootRouter);
+app.use(['/en', '/fr', '/ro'], mainRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
