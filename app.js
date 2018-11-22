@@ -1,6 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
-const hbs = require('hbs');
+const nunjucks = require('nunjucks');
 const i18n = require('i18n');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -13,7 +13,6 @@ const app = express();
 
 // configure i18n
 i18n.configure({
-    locales: ['en', 'fr', 'ro'],
     defaultLocale: 'en',
     cookie: 'locale',
     directory: path.join(__dirname, 'i18n'),
@@ -21,16 +20,22 @@ i18n.configure({
     extension: '.json'
 });
 
-// view engine helpers
+// configure nunjucks
+const env = nunjucks.configure('views', {
+  autoescape: true,
+  express: app
+});
 const pkgInfo = require('./package.json');
 const assetsMountPoint = path.join('/assets', pkgInfo.version);
-hbs.registerHelper('asset', assetPath => path.join(assetsMountPoint, assetPath));
-hbs.registerHelper('l', i18n.__);
-hbs.registerHelper('ln', i18n.__n);
 
-// view engine setup
+// nunjucks globals
+env.addGlobal('asset', assetPath => path.join(assetsMountPoint, assetPath));
+env.addGlobal('__', function (...args) { return i18n.__.apply(this.ctx, args); });
+env.addGlobal('__n', function (...args) { return i18n.__n.apply(this.ctx, args); });
+
+// view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+app.set('view engine', 'njk');
 
 // miscelaneous
 app.set('x-powered-by', false);
