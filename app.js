@@ -30,8 +30,8 @@ const assetsMountPoint = path.join('/assets', pkgInfo.version);
 
 // nunjucks globals
 env.addGlobal('asset', assetPath => path.join(assetsMountPoint, assetPath));
-env.addGlobal('__', function (...args) { return i18n.__.apply(this.ctx, args); });
-env.addGlobal('__n', function (...args) { return i18n.__n.apply(this.ctx, args); });
+env.addGlobal('__', i18n.__.bind(this.ctx));
+env.addGlobal('__n', i18n.__n.bind(this.ctx));
 
 // view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));
