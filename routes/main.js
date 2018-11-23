@@ -18,8 +18,6 @@ router.use((req, res, next) => {
   next();
 });
 
-router.get('/', (req, res) => res.render('landing', {
-  title: res.__('Valentina Catana - Certified Translator')
-}));
+router.get('/', (req, res) => res.render('landing'));
 
  module.exports = router;
