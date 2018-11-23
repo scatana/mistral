@@ -9,6 +9,8 @@ const logger = require('morgan');
 const rootRouter = require('./routes/root');
 const mainRouter = require('./routes/main');
 
+const isDev = process.env.NODE_ENV === 'development';
+
 const app = express();
 
 // configure i18n
@@ -17,7 +19,8 @@ i18n.configure({
   defaultLocale: 'en',
   cookie: 'locale',
   directory: path.join(__dirname, 'i18n'),
-  syncFiles: true,
+  updateFiles: isDev,
+  syncFiles: isDev,
   indent: '  '
 });
 
