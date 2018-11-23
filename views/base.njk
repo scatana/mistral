@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" href="{{ 'img/favicon.ico' | asset }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ 'img/apple-touch-icon.png' | asset }}">
+
+    <title>{{ title }}</title>
+
+    {% block fonts %}{% endblock %}
+    {% block styles %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

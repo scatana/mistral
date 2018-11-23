@@ -13,25 +13,26 @@ const app = express();
 
 // configure i18n
 i18n.configure({
-    defaultLocale: 'en',
-    cookie: 'locale',
-    directory: path.join(__dirname, 'i18n'),
-    updateFiles: false,
-    extension: '.json'
+  locales: [ 'en', 'fr', 'ro' ],
+  defaultLocale: 'en',
+  cookie: 'locale',
+  directory: path.join(__dirname, 'i18n'),
+  syncFiles: true,
+  indent: '  '
 });
 
 // configure nunjucks
 const env = nunjucks.configure('views', {
   autoescape: true,
+  trimBlocks: true,
+  lstripBlocks: true,
   express: app
 });
 const pkgInfo = require('./package.json');
 const assetsMountPoint = path.join('/assets', pkgInfo.version);
 
-// nunjucks globals
-env.addGlobal('asset', assetPath => path.join(assetsMountPoint, assetPath));
-env.addGlobal('__', i18n.__.bind(this.ctx));
-env.addGlobal('__n', i18n.__n.bind(this.ctx));
+// nunjucks filters
+env.addFilter('asset', assetPath => path.join(assetsMountPoint, assetPath));
 
 // view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));
@@ -63,7 +64,7 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', { title: 'Error' });
 });
 
 module.exports = app;

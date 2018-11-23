@@ -1,26 +1,25 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/**
- * Save the requested locale into a cookie if it differs from the current locale;
- * the cookie should expire in one year; this happens for all routes that this
- * router handles
- */
+// Save the requested locale into a cookie if it differs from the current locale;
+// the cookie should expire in one year; this happens for all routes that this
+// router handles
 router.use((req, res, next) => {
-    var requestedLocale = req.baseUrl.split('/')[1];
-    var currentLocale = req.getLocale();
+  const requestedLocale = req.baseUrl.split('/')[1];
+  const currentLocale = req.getLocale();
 
-    if (requestedLocale !== currentLocale) {
-        res.setLocale(requestedLocale);
+  if (requestedLocale !== currentLocale) {
+    res.setLocale(requestedLocale);
+    res.cookie('locale', requestedLocale, {
+      expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000) // one year
+    });
+  }
 
-        res.cookie('locale', requestedLocale, {
-            expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000) // one year
-        });
-    }
-
-    next();
+  next();
 });
 
-router.get('/', (req, res) => res.render('index'));
+router.get('/', (req, res) => res.render('landing', {
+  title: res.__('Valentina Catana - Certified Translator')
+}));
 
-module.exports = router;
+ module.exports = router;
