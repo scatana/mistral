@@ -10,7 +10,6 @@ const rootRouter = require('./routes/root');
 const mainRouter = require('./routes/main');
 
 const app = express();
-const isDev = app.get('env') === 'development';
 
 // configure i18n
 i18n.configure({
@@ -18,9 +17,8 @@ i18n.configure({
   defaultLocale: 'en',
   cookie: 'locale',
   directory: path.join(__dirname, 'i18n'),
-  updateFiles: isDev,
-  syncFiles: isDev,
-  indent: '  '
+  updateFiles: false,
+  objectNotation: true
 });
 
 // configure nunjucks
