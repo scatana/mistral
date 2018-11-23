@@ -9,9 +9,8 @@ const logger = require('morgan');
 const rootRouter = require('./routes/root');
 const mainRouter = require('./routes/main');
 
-const isDev = process.env.NODE_ENV === 'development';
-
 const app = express();
+const isDev = app.get('env') === 'development';
 
 // configure i18n
 i18n.configure({
