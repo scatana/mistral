@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Service",
+    "serviceType": "{{ __('brand.services') }}",
+    "provider": {
+        "@type": "Person",
+        "email": "{{ __('brand.contact.email') }}",
+        "jobTitle": "{{ __('brand.description') }}",
+        "memberOf": {
+            "@type": "Organization",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Canada",
+                "addressLocality": "{{ __('brand.contact.city') }}",
+                "addressRegion": "QC",
+                "postalCode": "H3A 2S9",
+                "streetAddress": "1108-2021 Union Avenue"
+            },
+            "name": "Ordre des traducteurs, terminologues et interprètes agréés du Québec (OTTIAQ)",
+            "url": "https://ottiaq.org"
+        },
+        "name": "{{ __('brand.name') }}",
+        "telephone": "{{ __('brand.contact.phone') }}",
+        "url": "https://www.valentinacatana.com"
+    }
+}
+</script>

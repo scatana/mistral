@@ -1,1 +1,12 @@
-{}
+{
+  "brand": {
+    "name": "Valentina Cătană",
+    "description": "Traducător autorizat",
+    "services": "Servicii profesionale de traducere",
+    "contact": {
+      "email": "valentina.catana@gmail.com",
+      "phone": "1 514 739 3882",
+      "city": "Montreal"
+    }
+  }
+}

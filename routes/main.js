@@ -18,6 +18,8 @@ router.use((req, res, next) => {
   next();
 });
 
-router.get('/', (req, res) => res.render('landing'));
+router.get('/', (req, res) => res.render('landing', {
+  title: `${res.__('brand.name')} - ${res.__('brand.description')}, ${res.__('brand.contact.city')}`
+}));
 
- module.exports = router;
+module.exports = router;

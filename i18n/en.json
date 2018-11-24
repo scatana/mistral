@@ -1,1 +1,12 @@
-{}
+{
+  "brand": {
+    "name": "Valentina Catana",
+    "description": "Certified Translator",
+    "services": "Professional translation services",
+    "contact": {
+      "email": "valentina.catana@gmail.com",
+      "phone": "1-514-739-3882",
+      "city": "Montreal"
+    }
+  }
+}

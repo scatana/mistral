@@ -3,3 +3,7 @@
 {% block styles %}
   <link rel='stylesheet' href="{{'css/landing.css' | asset}}" />
 {% endblock %}
+
+{% block body %}
+  {% include 'structured_data/services.njk' %}
+{% endblock %}

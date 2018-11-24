@@ -1,1 +1,12 @@
-{}
+{
+  "brand": {
+    "name": "Valentina Catana",
+    "description": "Traducteur agréé",
+    "services": "Services de traduction professionnelle",
+    "contact": {
+      "email": "valentina.catana@gmail.com",
+      "phone": "1 514 739-3882",
+      "city": "Montréal"
+    }
+  }
+}
