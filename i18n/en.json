@@ -2,9 +2,11 @@
   "brand": {
     "name": "Valentina Catana",
     "description": "Certified Translator",
-    "service-type": "Professional translation services",
+    "service-type": "Translation services",
     "service-description": "Certified translations from and into Romanian, English, French. Certified translator in Montreal, Quebec, Canada. Official documents, general texts, subtitling.",
     "contact": {
+      "fname": "Valentina",
+      "lname": "Catana",
       "email": "valentina.catana@gmail.com",
       "phone": "1-514-739-3882",
       "city": "Montreal"

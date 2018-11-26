@@ -2,9 +2,11 @@
   "brand": {
     "name": "Valentina Cătană",
     "description": "Traducător autorizat",
-    "service-type": "Servicii profesionale de traducere",
+    "service-type": "Servicii de traducere",
     "service-description": "Traduceri autorizate din și în română, franceză, engleză. Traducător autorizat în Montreal, Quebec, Canada. Documente oficiale, texte generale, subtitrări.",
     "contact": {
+      "fname": "Valentina",
+      "lname": "Cătană",
       "email": "valentina.catana@gmail.com",
       "phone": "1 514 739 3882",
       "city": "Montreal"

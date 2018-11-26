@@ -6,4 +6,15 @@
 
 {% block body %}
   {% include 'structured_data/services.njk' %}
+  <header>
+    <nav>
+      <div class="brand">
+        <img src="{{'img/logo_72-white.png' | asset}}" class="logo" alt="Logo" />
+        <div class="name">
+          <span class="fname">{{ __('brand.contact.fname') }}</span>
+          <span class="lname">{{ __('brand.contact.lname') }}</span>
+        </div>
+      </div>
+    </nav>
+  </header>
 {% endblock %}

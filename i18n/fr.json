@@ -2,9 +2,11 @@
   "brand": {
     "name": "Valentina Catana",
     "description": "Traducteur agréé",
-    "service-type": "Services de traduction professionnelle",
+    "service-type": "Services de traduction",
     "service-description": "Traductions certifiées de et en roumain, français, anglais. Traducteur agréé à Montréal, Québec, Canada. Documents officiels, textes généraux, sous-titrage.",
     "contact": {
+      "fname": "Valentina",
+      "lname": "Catana",
       "email": "valentina.catana@gmail.com",
       "phone": "1 514 739-3882",
       "city": "Montréal"
