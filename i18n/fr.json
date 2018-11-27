@@ -11,5 +11,19 @@
       "phone": "1 514 739-3882",
       "city": "Montréal"
     }
+  },
+  "routes": {
+    "contact": "contact",
+    "rates": "prix",
+    "services": "services",
+    "testimonials": "temoignages"
+  },
+  "ui": {
+    "nav-menu": {
+      "services": "Services",
+      "rates": "Prix",
+      "contact": "Contact",
+      "testimonials": "Témoignages"
+    }
   }
 }
