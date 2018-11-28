@@ -81,7 +81,7 @@ header {
   width: 100%;
   padding: 15px 0;
   color: #fff;
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 1px black;
 }
 
 header nav {
@@ -102,6 +102,7 @@ header .logo {
 .brand .name {
   font-family: Exo2;
   font-size: 22px;
+  color: #fff;
   line-height: 36px;
   padding-left: 15px;
   border-left: 1px solid #ccc;
@@ -120,17 +121,31 @@ nav .nav-menu {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  line-height: 36px;
 }
 
-nav a {
+.nav-menu a {
   font-family: Exo2;
   font-weight: 600;
+  color: #c0c0c0;
   text-decoration: none;
-  color: #fff;
-  margin-left: 30px;
+  padding: 7px 15px;
+  margin-left: 10px;
+  transition: color 0.25s ease;
 }
 
-nav a:hover {
-  border-bottom: 1px solid #999;
+.nav-menu a:hover {
+  color: #fff;
+}
+
+.nav-menu a.button {
+  background-color: #2464ae;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 25px;
+  text-shadow: none;
+  transition: background-color 0.25s ease;
+}
+
+.nav-menu a.button:hover {
+  background-color: #4484ce;
 }

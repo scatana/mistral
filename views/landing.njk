@@ -11,20 +11,18 @@
   <div id="container">
     <header>
       <nav>
-        <div class="brand">
-          <a href="{{ baseURL }}">
-            <img src="{{'img/logo_72-white.png' | asset}}" class="logo" alt="Logo" />
-          </a>
+        <a href="{{ baseURL }}" class="brand">
+          <img src="{{'img/logo_72-white.png' | asset}}" class="logo" alt="Logo" />
           <div class="name">
             <span class="fname">{{ __('brand.contact.fname') }}</span>
             <span class="lname">{{ __('brand.contact.lname') }}</span>
           </div>
-        </div>
+        </a>
         <div class="nav-menu">
           <a href="{{ baseURL }}/{{ __('routes.services') }}">{{ __('ui.nav-menu.services') }}</a>
           <a href="{{ baseURL }}/{{ __('routes.rates') }}">{{ __('ui.nav-menu.rates') }}</a>
-          <a href="{{ baseURL }}/{{ __('routes.contact') }}">{{ __('ui.nav-menu.contact') }}</a>
           <a href="{{ baseURL }}/{{ __('routes.testimonials') }}">{{ __('ui.nav-menu.testimonials') }}</a>
+          <a href="{{ baseURL }}/{{ __('routes.contact') }}" class="button">{{ __('ui.nav-menu.contact') }}</a>
         </div>
       </nav>
     </header>
