@@ -24,6 +24,10 @@
       "rates": "Prix",
       "contact": "Contact",
       "testimonials": "Témoignages"
+    },
+    "buttons": {
+      "call-me": "Apellez-moi",
+      "email-me": "Courriel"
     }
   }
 }

@@ -24,6 +24,10 @@
       "rates": "Tarife",
       "contact": "Contact",
       "testimonials": "Impresii"
+    },
+    "buttons": {
+      "call-me": "Sunați-mă",
+      "email-me": "Scrieți-mi"
     }
   }
 }
