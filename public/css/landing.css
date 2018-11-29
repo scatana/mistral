@@ -227,7 +227,10 @@ main .phone {
   background-color: #0c9924;
 }
 
-main .email:hover svg,
+main .email:hover svg {
+  transform: rotateZ(-360deg);
+}
+
 main .phone:hover svg {
   transform: rotateZ(360deg);
 }
