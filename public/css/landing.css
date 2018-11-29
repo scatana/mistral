@@ -200,6 +200,7 @@ main .contact svg {
   border-radius: 20px;
   box-shadow: 0 0 3px #333;
   margin-right: 10px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 main .email,
@@ -222,16 +223,13 @@ main .email {
   background-color: #fc4a1a;
 }
 
-main .email:hover {
-  background-color: #ff6a3a;
-}
-
 main .phone {
   background-color: #0c9924;
 }
 
-main .phone:hover {
-  background-color: #2cb944;
+main .email:hover svg,
+main .phone:hover svg {
+  transform: rotateZ(360deg);
 }
 
 footer {
