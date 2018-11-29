@@ -14,14 +14,12 @@
   },
   "routes": {
     "contact": "contact",
-    "rates": "tarife",
-    "services": "servicii",
+    "services-and-rates": "servicii-si-tarife",
     "testimonials": "impresii"
   },
   "ui": {
     "nav-menu": {
-      "services": "Servicii",
-      "rates": "Tarife",
+      "services-and-rates": "Servicii și tarife",
       "contact": "Contact",
       "testimonials": "Impresii"
     },

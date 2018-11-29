@@ -14,14 +14,12 @@
   },
   "routes": {
     "contact": "contact",
-    "rates": "rates",
-    "services": "services",
+    "services-and-rates": "services-and-rates",
     "testimonials": "testimonials"
   },
   "ui": {
     "nav-menu": {
-      "services": "Services",
-      "rates": "Rates",
+      "services-and-rates": "Services & rates",
       "contact": "Contact",
       "testimonials": "Testimonials"
     },
