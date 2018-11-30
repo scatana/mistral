@@ -11,19 +11,22 @@
   {% include 'partials/icons.njk' %}
   <div id="container">
     <header>
+      <a href="{{ baseURL }}" class="brand">
+        <span class="name">
+          <span class="fname">{{ __('brand.contact.fname') }}</span>
+          <span class="lname">{{ __('brand.contact.lname') }}</span>
+        </span>
+      </a>
       <nav>
-        <a href="{{ baseURL }}" class="brand">
-          <img src="{{'img/logo_72-white.png' | asset}}" class="logo" alt="Logo" />
-          <div class="name">
-            <span class="fname">{{ __('brand.contact.fname') }}</span>
-            <span class="lname">{{ __('brand.contact.lname') }}</span>
-          </div>
+        <a href="{{ baseURL }}/{{ __('routes.services-and-rates') }}" class="link">
+          {{ __('ui.nav-menu.services-and-rates') }}
         </a>
-        <div class="nav-menu">
-          <a href="{{ baseURL }}/{{ __('routes.services-and-rates') }}" class="link">{{ __('ui.nav-menu.services-and-rates') }}</a>
-          <a href="{{ baseURL }}/{{ __('routes.testimonials') }}" class="link">{{ __('ui.nav-menu.testimonials') }}</a>
-          <a href="{{ baseURL }}/{{ __('routes.contact') }}" class="button">{{ __('ui.nav-menu.contact') }}</a>
-        </div>
+        <a href="{{ baseURL }}/{{ __('routes.testimonials') }}" class="link">
+          {{ __('ui.nav-menu.testimonials') }}
+        </a>
+        <a href="{{ baseURL }}/{{ __('routes.contact') }}" class="button">
+          {{ __('ui.nav-menu.contact') }}
+        </a>
       </nav>
     </header>
     <main>
