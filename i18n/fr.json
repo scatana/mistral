@@ -3,7 +3,7 @@
     "name": "Valentina Catana",
     "description": "Traducteur agréé",
     "service-type": "Services de traduction",
-    "service-description": "Traductions certifiées de et en roumain, français, anglais. Traducteur agréé à Montréal, Québec, Canada. Documents officiels, textes généraux, sous-titrage.",
+    "service-description": "Traductions certifiées de et en français, anglais, roumain. Traducteur agréé à Montréal, Québec, Canada. Documents officiels, textes généraux, sous-titrage.",
     "contact": {
       "fname": "Valentina",
       "lname": "Catana",
@@ -27,5 +27,9 @@
       "call-me": "Apellez-moi",
       "email-me": "Courriel"
     }
+  },
+  "content": {
+    "from-to": "Traductions de et en <a href='/fr'>français</a>, <a href='/en'>anglais</a>, <a href='/ro'>roumain</a>.",
+    "member-of": "Membre de l'Ordre des traducteurs, terminologues et interprètes agréés du Québec (<a href='https://ottiaq.org' target='_blank'>OTTIAQ</a>)."
   }
 }

@@ -3,7 +3,7 @@
     "name": "Valentina Catana",
     "description": "Certified Translator",
     "service-type": "Translation Services",
-    "service-description": "Certified translations from and into Romanian, English, French. Certified translator in Montreal, Quebec, Canada. Official documents, general texts, subtitling.",
+    "service-description": "Certified translations from and into English, French, Romanian. Certified translator in Montreal, Quebec, Canada. Official documents, general texts, subtitling.",
     "contact": {
       "fname": "Valentina",
       "lname": "Catana",
@@ -27,5 +27,9 @@
       "call-me": "Call me",
       "email-me": "Email me"
     }
+  },
+  "content": {
+    "from-to": "Translations from and into <a href='/en'>English</a>, <a href='/fr'>French</a>, <a href='/ro'>Romanian</a>.",
+    "member-of": "Member of Ordre des traducteurs, terminologues et interprètes agréés du Québec (<a href='https://ottiaq.org/en' target='_blank'>OTTIAQ</a>)."
   }
 }
