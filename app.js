@@ -36,7 +36,7 @@ env.addFilter('asset', assetPath => path.join(assetsMountPoint, assetPath));
 
 // view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'njk');
+app.set('view engine', 'html');
 
 // miscelaneous
 app.set('x-powered-by', false);

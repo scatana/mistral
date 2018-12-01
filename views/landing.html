@@ -1,9 +1,9 @@
-{% extends 'base.njk' %}
+{% extends 'base.html' %}
 
 {% set baseURL = "/" + getLocale() %}
 
 {% block fonts %}
-  {% include 'partials/fonts.njk' %}
+  {% include 'partials/fonts.html' %}
 {% endblock %}
 
 {% block styles %}
@@ -11,8 +11,8 @@
 {% endblock %}
 
 {% block body %}
-  {% include 'structured_data/services.njk' %}
-  {% include 'partials/icons.njk' %}
+  {% include 'structured_data/services.html' %}
+  {% include 'partials/icons.html' %}
   <div id="container">
     <header>
       <a href="{{ baseURL }}" class="brand">
@@ -24,11 +24,9 @@
       <nav>
         <a href="{{ baseURL }}/{{ __('routes.services-and-rates') }}">
           {{ __('ui.nav-menu.services-and-rates') }}
-        </a>
-        <a href="{{ baseURL }}/{{ __('routes.testimonials') }}">
+        </a><a href="{{ baseURL }}/{{ __('routes.testimonials') }}">
           {{ __('ui.nav-menu.testimonials') }}
-        </a>
-        <a href="{{ baseURL }}/{{ __('routes.contact') }}">
+        </a><a href="{{ baseURL }}/{{ __('routes.contact') }}">
           {{ __('ui.nav-menu.contact') }}
         </a>
       </nav>
