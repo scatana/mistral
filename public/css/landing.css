@@ -28,28 +28,24 @@ body::after {
     z-index: -1;
 }
 
-@media (min-width: 576px) {
-  body {
-    background-image: url(../img/desktop_858.jpg);
-  }
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  body {
-    background-image: url(../img/desktop_1280.jpg);
-  }
+a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 2px;
+  left: 0;
+  background: #fff;
 }
 
-@media (min-width: 992px) {
-  body {
-    background-image: url(../img/desktop_1920.jpg);
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-image: url(../img/desktop_1920.jpg);
-  }
+a:hover::after {
+  background: #fc6719;
 }
 
 #container {
@@ -112,13 +108,10 @@ nav {
 }
 
 nav a {
-  display: inline-block;
-  position: relative;
   font-family: Exo2;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-  text-decoration: none;
   padding: 8px 0;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -138,7 +131,7 @@ nav a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fc4a1a;
+  background-color: #fc6719;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -147,6 +140,12 @@ nav a::before {
 nav a:hover::before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+.brand::after,
+nav a::after,
+.contact a::after {
+  display: none;
 }
 
 main {
@@ -238,6 +237,27 @@ main .phone span {
 }
 
 @media (min-width: 550px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .brand {
+    line-height: 35px;
+    background-position: 0 5px;
+  }
+
+  .brand::before {
+    height: 35px;
+  }
+
+  nav {
+    flex: 1;
+    border-top: none;
+    margin-top: 0;
+    text-align: right;
+  }
+
   main .contact {
     flex-direction: row;
   }
@@ -248,5 +268,71 @@ main .phone span {
 
   main .phone span {
     width: auto;
+  }
+}
+
+@media (min-width: 660px) {
+  .brand {
+    background-image: url(../img/logo_64-stroke.png);
+    background-size: 32px;
+    background-position: 0 2px;
+    font-size: 18px;
+    padding-left: 36px;
+  }
+
+  .brand::before {
+    left: 47px;
+  }
+
+  nav a:last-child {
+    background-color: #14549e;
+    padding: 7px 9px;
+    border: 1px solid #14549e;
+    border-radius: 4px;
+  }
+
+  nav a:last-child::before {
+    display: none;
+  }
+
+  nav a:last-child:hover {
+    border: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  main .blurb {
+    width: 70%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    background-image: url(../img/desktop_858.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../img/desktop_1280.jpg);
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url(../img/desktop_1920.jpg);
+  }
+
+  main .contact {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../img/desktop_1920.jpg);
   }
 }
