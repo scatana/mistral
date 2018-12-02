@@ -17,8 +17,8 @@
     <header>
       <a href="{{ baseURL }}" class="brand">
         <span class="name">
-          <span class="fname">{{ __('brand.contact.fname') }}</span>
-          <span class="lname">{{ __('brand.contact.lname') }}</span>
+          <span class="fname">{{ __('contact.fname') }}</span>
+          <span class="lname">{{ __('contact.lname') }}</span>
         </span>
       </a>
       <nav>
@@ -35,13 +35,13 @@
       <h1>{{ __('brand.service-type') }}</h1>
       <p>{{ __('content.from-to') | safe }} {{ __('content.member-of') | safe }}</p>
       <p class="contact">
-        <a class="email" href="mailto:{{ __('brand.contact.email') }}">
+        <a class="email" href="mailto:{{ __('contact.email') }}">
           <svg class="icon icon-mail-reply"><use xlink:href="#icon-mail-reply"></use></svg>
-          {{ __('ui.buttons.email-me') }}
+          {{ __('contact.email') }}
         </a>
         <a class="phone" href="tel:+01-514-739-3882">
           <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
-          {{ __('ui.buttons.call-me') }}
+          <span>{{ __('contact.phone') }}</span>
         </a>
       </p>
     </main>
