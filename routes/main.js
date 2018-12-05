@@ -19,7 +19,8 @@ router.use((req, res, next) => {
 });
 
 router.get('/', (req, res) => res.render('landing', {
-  title: `${res.__('brand.name')} - ${res.__('brand.description')}, ${res.__('contact.city')}`
+  title: `${res.__('brand.name')} - ${res.__('brand.description')}, ${res.__('contact.city')}`,
+  description: res.__('brand.service-description')
 }));
 
 module.exports = router;
