@@ -216,6 +216,14 @@ main .phone {
   background-color: #00830e;
 }
 
+main .email span {
+  margin-top: -3px;
+}
+
+main .phone span {
+  margin-top: -2px;
+}
+
 main .email:hover svg {
   transform: rotateZ(-360deg);
 }
