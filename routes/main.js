@@ -23,6 +23,4 @@ router.get('/', (req, res) => res.render('landing', {
   description: res.__('brand.service-description')
 }));
 
-console.log(express);
-
 module.exports = router;
