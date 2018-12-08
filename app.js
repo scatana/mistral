@@ -6,9 +6,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const rootRouter = require('./routes/root');
-const mainRouter = require('./routes/main');
-
 const app = express();
 
 // configure i18n
@@ -47,6 +44,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(i18n.init);
 app.use(assetsMountPoint, express.static(path.join(__dirname, 'public')));
+
+// Routes
+const rootRouter = require('./routes/root');
+const mainRouter = require('./routes/main');
 
 app.use('/', rootRouter);
 app.use(['/en', '/fr', '/ro'], mainRouter);
