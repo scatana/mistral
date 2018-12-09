@@ -46,11 +46,10 @@ app.use(i18n.init);
 app.use(assetsMountPoint, express.static(path.join(__dirname, 'public')));
 
 // Routes
-const rootRouter = require('./routes/root');
-const mainRouter = require('./routes/main');
-
-app.use('/', rootRouter);
-app.use(['/en', '/fr', '/ro'], mainRouter);
+app.use('/', require('./routes/root'));
+app.use('/en', require('./routes/en'));
+app.use('/fr', require('./routes/fr'));
+app.use('/ro', require('./routes/ro'));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
