@@ -2,7 +2,7 @@ const express = require('express');
 const i18n = require('i18n');
 
 // Return a router that deals with localized routes
-function getRouter(locale) {
+module.exports = locale => {
   const router = express.Router();
 
   router.use(require('./middleware/localeCookie'));
@@ -18,5 +18,3 @@ function getRouter(locale) {
 
   return router;
 };
-
-module.exports = getRouter;
