@@ -1,1 +1,12 @@
 {% extends '_base.html' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ 'css/vendor/bootstrap.min.css' | asset }}">
+  <link rel="stylesheet" href="{{ 'css/main.css' | asset }}">
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ 'js/vendor/jquery.slim.min.js' | asset }}"></script>
+  <script src="{{ 'js/vendor/bootstrap.bundle.min.js' | asset }}"></script>
+  <script src="{{ 'js/main.js' | asset }}"></script>
+{% endblock %}
