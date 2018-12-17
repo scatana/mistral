@@ -1,6 +1,11 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand mr-auto mr-lg-0" href="#">Offcanvas navbar</a>
+    <a href="{{ baseURL }}" class="navbar-brand mr-auto mr-lg-0">
+      <span class="name">
+        <span class="fname">{{ __('contact.fname') }}</span>
+        <span class="lname">{{ __('contact.lname') }}</span>
+      </span>
+    </a>
     <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
       <span class="navbar-toggler-icon"></span>
     </button>
