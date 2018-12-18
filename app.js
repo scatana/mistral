@@ -18,20 +18,20 @@ i18n.configure({
   objectNotation: true
 });
 
-// configure nunjucks
+// enable view engine (nunjucks)
+const pkgInfo = require('./package.json');
+const assetsMountPoint = path.join('/assets', pkgInfo.version);
 const env = nunjucks.configure('views', {
   autoescape: true,
   trimBlocks: true,
   lstripBlocks: true,
   express: app
 });
-const pkgInfo = require('./package.json');
-const assetsMountPoint = path.join('/assets', pkgInfo.version);
 
 // nunjucks filters
 env.addFilter('asset', assetPath => path.join(assetsMountPoint, assetPath));
 
-// view engine (nunjucks)
+// configure view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
