@@ -13,13 +13,22 @@
     "city": "Montreal"
   },
   "routes": {
-    "contact": "contact",
-    "services-and-rates": "services-and-rates",
-    "testimonials": "testimonials"
+    "contact": {
+      "path": "contact",
+      "description": ""
+    },
+    "services-rates": {
+      "path": "services-rates",
+      "description": "Description of services, price list"
+    },
+    "testimonials": {
+      "path": "testimonials",
+      "description": ""
+    }
   },
   "ui": {
     "nav-menu": {
-      "services-and-rates": "Services & rates",
+      "services-rates": "Services & rates",
       "contact": "Contact",
       "testimonials": "Testimonials"
     }

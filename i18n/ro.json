@@ -13,13 +13,22 @@
     "city": "Montreal"
   },
   "routes": {
-    "contact": "contact",
-    "services-and-rates": "servicii-si-tarife",
-    "testimonials": "impresii"
+    "contact": {
+      "path": "contact",
+      "description": ""
+    },
+    "services-rates": {
+      "path": "servicii-tarife",
+      "description": "Descrierea serviciilor, lista de preturi"
+    },
+    "testimonials": {
+      "path": "impresii",
+      "description": ""
+    }
   },
   "ui": {
     "nav-menu": {
-      "services-and-rates": "Servicii și tarife",
+      "services-rates": "Servicii și tarife",
       "contact": "Contact",
       "testimonials": "Impresii"
     }

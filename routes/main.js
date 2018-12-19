@@ -13,7 +13,7 @@ module.exports = locale => {
   // Loop over all defined routes
   const routes = i18n.getCatalog(locale).routes;
   for (let route in routes) {
-    router.get('/' + routes[route], require('./handlers/' + route));
+    router.get('/' + routes[route].path, require('./handlers/' + route));
   }
 
   return router;
