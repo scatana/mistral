@@ -26,15 +26,11 @@
       "description": ""
     }
   },
-  "ui": {
-    "nav-menu": {
-      "services-rates": "Services et prix",
-      "contact": "Contact",
-      "testimonials": "Témoignages"
-    }
-  },
   "content": {
+    "contact": "Contact",
     "from-to": "Traductions de et en <a href='/fr'>français</a>, <a href='/en'>anglais</a> et <a href='/ro'>roumain</a>.",
-    "member-of": "Membre de l'Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>."
+    "member-of": "Membre de l'Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "services-rates": "Services et prix",
+    "testimonials": "Témoignages"
   }
 }

@@ -4,8 +4,8 @@ body {
 }
 
 body {
-  padding-top: 60px;
-    font-family: OpenSans, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  padding-top: 50px;
+  font-family: OpenSans, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 @media (min-width: 1200px) {
@@ -25,7 +25,7 @@ body {
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.9);
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
@@ -38,8 +38,8 @@ body {
 
 .navbar {
   font-family: Exo2;
-  border-bottom: 1px solid #fcfdfe;
-  box-shadow: 0 0 3px #aaa;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px #bdbdbd;
 }
 
 .navbar-nav {
@@ -83,4 +83,16 @@ body {
 
 .navbar-brand .lname {
   font-weight: 600;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #fc6719;
+}
+
+header h1 {
+  font-family: Exo2;
+  font-weight: 600;
+  text-align: center;
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #eee;
 }
