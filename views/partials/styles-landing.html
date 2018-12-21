@@ -52,11 +52,27 @@ a:hover::after {
 #container {
   display: flex;
   flex-direction: column;
-  min-width: 290px;
-  max-width: 1000px;
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+  #container {
+    max-width: 540px
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    max-width: 720px
+  }
+}
+
+@media (min-width: 992px) {
+  #container {
+    max-width: 960px
+  }
 }
 
 header {
@@ -281,7 +297,7 @@ main .phone span {
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .brand {
     background-image: url({{ 'img/logo_64-stroke.png' | asset }});
     background-size: 32px;
