@@ -5,7 +5,7 @@ body {
 
 body {
   background-color: #f9f9f9;
-  padding-top: 48px;
+  padding-top: 46px;
   font-family: OpenSans, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
 }
@@ -13,28 +13,6 @@ body {
 @media (min-width: 1200px) {
   .container {
     max-width: 1030px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 48px;
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: rgba(255, 255, 255, 0.95);
-    transition-timing-function: ease-in-out;
-    transition-duration: .3s;
-    transition-property: left, visibility;
-  }
-  .offcanvas-collapse.open {
-    left: 0;
-    visibility: visible;
   }
 }
 
@@ -46,31 +24,31 @@ body {
 }
 
 .navbar-nav {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .navbar-brand {
   display: inline-block;
   position: relative;
-  background-image: url(../img/logo_64.png);
+  background-image: url(../img/logo_48.png);
   background-repeat: no-repeat;
-  background-size: 32px;
-  font-size: 18px;
-  line-height: 32px;
+  background-size: 24px;
+  font-size: 1rem;
+  line-height: 24px;
   text-decoration: none;
   padding: 0;
-  padding-left: 32px;
+  padding-left: 24px;
 }
 
 .navbar-brand::before {
   content: "";
   display: block;
   position: absolute;
-  left: 44px;
+  left: 36px;
   top: 0;
   width: 1px;
-  height: 32px;
+  height: 24px;
   background-color: #ccc;
 }
 
@@ -85,6 +63,48 @@ body {
 
 .navbar-brand .lname {
   font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 46px;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+  }
+
+  .offcanvas-collapse.open {
+    left: 0;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 48px;
+  }
+
+  .navbar-brand {
+    background-image: url(../img/logo_64.png);
+    background-size: 32px;
+    font-size: 1.2rem;
+    line-height: 32px;
+    padding-left: 32px;
+  }
+
+  .navbar-brand::before {
+    left: 44px;
+    height: 32px;
+  }
 }
 
 header h1 {
