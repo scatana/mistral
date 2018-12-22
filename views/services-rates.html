@@ -1,10 +1,10 @@
 {% extends '_main.html' %}
 
 {% block body %}
-  {% include 'partials/navigation.html' %}
-  <div class="container">
-    <header>
+  <header>
+    {% include 'partials/navigation.html' %}
+    <div class="container">
       <h1>{{ __('content.services-rates') }}</h1>
-    </header>
-  </div>
+    </div>
+  </header>
 {% endblock %}
