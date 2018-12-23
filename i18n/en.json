@@ -26,10 +26,24 @@
       "description": ""
     }
   },
+  "documents": {
+    "attestation-certificate": "Attestation / Certificate",
+    "birth-marriage-divorce-certificate": "Birth / Marriage / Divorce / Death Certificate",
+    "comparative-evaluation": "Comparative Evaluation for Studies Done Outside Quebec",
+    "criminal-record": "Criminal Record",
+    "divorce-decision": "Divorce Decision",
+    "drivers-license": "Driver's License",
+    "high-school-university-diploma": "High School / University Diploma",
+    "power-of-attorney": "Power of Attorney",
+    "transcript-of-records": "Transcript of Records"
+  },
   "content": {
     "contact": "Contact",
     "from-to": "Translations from and into <a href='/en'>English</a>, <a href='/fr'>French</a> and <a href='/ro'>Romanian</a>.",
     "member-of": "Member of Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org/en' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "page": "page",
+    "quebec": "Quebec",
+    "romania": "Romania",
     "services-rates": "Services & rates",
     "testimonials": "Testimonials"
   }

@@ -3,8 +3,70 @@
 {% block body %}
   <header>
     {% include 'partials/navigation.html' %}
-    <div class="container">
-      <h1>{{ __('content.services-rates') }}</h1>
+    <div class="container py-5 my-5">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center text-muted">{{ __('content.services-rates') }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light py-4 border-top border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.attestation-certificate') }}</strong>
+                <span class="text-muted text-nowrap">$30 - $40</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.birth-marriage-divorce-certificate') }}</strong>
+                <span class="text-muted text-nowrap">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.comparative-evaluation') }}</strong>
+                <span class="text-muted text-nowrap">$40</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.criminal-record') }}</strong>
+                <span class="text-muted text-nowrap">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <strong class="d-block">{{ __('documents.divorce-decision') }}</strong>
+                  <small class="text-muted">{{ __('content.quebec') }}</small>
+                </div>
+                <span class="text-muted text-nowrap">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <strong class="d-block">{{ __('documents.divorce-decision') }}</strong>
+                  <small class="text-muted">{{ __('content.romania') }}</small>
+                </div>
+                <span class="text-muted text-nowrap">$50 / {{ __('content.page') }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.drivers-license') }}</strong>
+                <span class="text-muted text-nowrap">$35</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.high-school-university-diploma') }}</strong>
+                <span class="text-muted text-nowrap">$30 / {{ __('content.page') }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.power-of-attorney') }}</strong>
+                <span class="text-muted text-nowrap">$40 - $60 / {{ __('content.page') }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('documents.transcript-of-records') }}</strong>
+                <span class="text-muted text-nowrap">$100 - $125</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 {% endblock %}

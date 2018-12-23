@@ -26,10 +26,24 @@
       "description": ""
     }
   },
+  "document-types": {
+    "attestation-certificate": "Adeverință / certificat",
+    "birth-marriage-divorce-certificate": "Certificat de naștere / căsătorie / divorț / deces",
+    "comparative-evaluation": "Evaluare comparativă a studiilor efectuate în afara Quebecului",
+    "criminal-record": "Cazier judiciar",
+    "divorce-decision": "Hotărâre de divorț",
+    "drivers-license": "Permis de conducere",
+    "high-school-university-diploma": "Diplomă de liceu / facultate",
+    "power-of-attorney": "Procură",
+    "transcript-of-records": "Foaie matricolă"
+  },
   "content": {
     "contact": "Contact",
     "from-to": "Traduceri din și în <a href='/ro'>română</a>, <a href='/fr'>franceză</a> și <a href='/en'>engleză</a>.",
     "member-of": "Membru al Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "page": "pagină",
+    "quebec": "Quebec",
+    "romania": "România",
     "services-rates": "Servicii și tarife",
     "testimonials": "Impresii"
   }
