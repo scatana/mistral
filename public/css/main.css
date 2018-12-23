@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, .95);
   font-family: Exo2;
   line-height: 1;
-  box-shadow: 0 0 5px #ddd;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar-nav {
