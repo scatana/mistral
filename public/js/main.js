@@ -8,13 +8,18 @@ $(function () {
   let offsetY = 0;
   let $navbar = $(".navbar");
 
-  $(window).scroll(function(){
+  function updateNavbar() {
     offsetY = $(window).scrollTop();
 
-    if( offsetY > 0 ){
-      $navbar.css({'box-shadow':'0 0 5px #ccc'});
+    if (offsetY > 0) {
+      $navbar.css({'background':'#fff', 'box-shadow':'0 0 5px #555'});
+      $navbar.removeClass('navbar-dark').addClass('navbar-light');
     } else {
-      $navbar.css({'box-shadow':'none'});
+      $navbar.css({'background':'transparent', 'box-shadow':'none'});
+      $navbar.removeClass('navbar-light').addClass('navbar-dark');
     }
-  });
+  }
+  updateNavbar();
+
+  $(window).scroll(updateNavbar);
 });

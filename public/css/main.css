@@ -4,8 +4,26 @@ body {
 }
 
 body {
-  padding-top: 46px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
   font-family: OpenSans, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  padding-top: 46px;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,12 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1030px;
+    max-width: 830px;
   }
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, .95);
+  background-color: #3260b1;
   font-family: Exo2;
   line-height: 1;
   transition: all 0.3s ease-in-out 0s;
@@ -34,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
   display: inline-block;
   position: relative;
-  background-image: url(../img/logo_48.png);
+  background-image: url(../img/logo_48-stroke.png);
   background-repeat: no-repeat;
   background-size: 24px;
   font-size: 1rem;
@@ -79,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: #fff;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
@@ -97,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navbar-brand {
-    background-image: url(../img/logo_64.png);
+    background-image: url(../img/logo_64-stroke.png);
     background-size: 32px;
     font-size: 1.2rem;
     line-height: 32px;
