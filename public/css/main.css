@@ -38,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-  background-color: #3260b1;
   font-family: Exo2;
   line-height: 1;
   transition: all 0.3s ease-in-out 0s;
