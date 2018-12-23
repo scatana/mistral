@@ -12,54 +12,74 @@
     </div>
     <div class="bg-light py-4">
       <div class="container">
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.attestation-certificate') }}</span>
-            <span class="text-muted text-nowrap ml-3">$30 - $40</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.birth-marriage-divorce-certificate') }}</span>
-            <span class="text-muted text-nowrap ml-3">$30</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.comparative-evaluation') }}</span>
-            <span class="text-muted text-nowrap ml-3">$40</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.criminal-record') }}</span>
-            <span class="text-muted text-nowrap ml-3">$30</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <div>
-              <span class="d-block">{{ __('documents.divorce-decision') }}</span>
-              <small class="text-muted">{{ __('content.quebec') }}</small>
-            </div>
-            <span class="text-muted text-nowrap ml-3">$30</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <div>
-              <span class="d-block">{{ __('documents.divorce-decision') }}</span>
-              <small class="text-muted">{{ __('content.romania') }}</small>
-            </div>
-            <span class="text-muted text-nowrap ml-3">$50 / {{ __('content.page') }}</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.drivers-license') }}</span>
-            <span class="text-muted text-nowrap ml-3">$35</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.high-school-university-diploma') }}</span>
-            <span class="text-muted text-nowrap ml-3">$30 / {{ __('content.page') }}</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.power-of-attorney') }}</span>
-            <span class="text-muted text-nowrap ml-3">$40 - $60 / {{ __('content.page') }}</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>{{ __('documents.transcript-of-records') }}</span>
-            <span class="text-muted text-nowrap ml-3">$100 - $125</span>
-          </li>
-        </ul>
+        <div class="row">
+          <div class="col">
+            <h2 class="text-muted">{{ __('content.services') }}</h2>
+            <p class="lead">{{ __('content.services-certified-translations') }}</p>
+            <p>{{ __('content.services-official-documents') }}</p>
+            <small class="text-muted">{{ __('content.services-i-do-not-revise') }}</small>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <h2 class="text-muted">{{ __('content.rates') }}</h2>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <strong>{{ __('content.rates-document') }}</strong>
+                <div class="text-right ml-3">
+                  <strong class="text-nowrap d-block mb-n1">{{ __('content.rates-rate') }} (CAD)</strong>
+                  <small class="badge badge-info">{{ __('content.rates-starts-at') }}</small>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.attestation-certificate') }}</span>
+                <span class="text-muted text-nowrap ml-3">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.birth-marriage-divorce-certificate') }}</span>
+                <span class="text-muted text-nowrap ml-3">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.comparative-evaluation') }}</span>
+                <span class="text-muted text-nowrap ml-3">$40</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.criminal-record') }}</span>
+                <span class="text-muted text-nowrap ml-3">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <span class="d-block">{{ __('documents.divorce-decision') }}</span>
+                  <small class="text-muted">{{ __('content.quebec') }}</small>
+                </div>
+                <span class="text-muted text-nowrap ml-3">$30</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <div>
+                  <span class="d-block">{{ __('documents.divorce-decision') }}</span>
+                  <small class="text-muted">{{ __('content.romania') }}</small>
+                </div>
+                <span class="text-muted text-nowrap ml-3">$50 / {{ __('content.page') }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.drivers-license') }}</span>
+                <span class="text-muted text-nowrap ml-3">$35</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.high-school-university-diploma') }}</span>
+                <span class="text-muted text-nowrap ml-3">$30 / {{ __('content.page') }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.power-of-attorney') }}</span>
+                <span class="text-muted text-nowrap ml-3">$40 / {{ __('content.page') }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>{{ __('documents.transcript-of-records') }}</span>
+                <span class="text-muted text-nowrap ml-3">$100</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>

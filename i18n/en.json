@@ -43,7 +43,15 @@
     "member-of": "Member of Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org/en' target='_blank' rel='noopener'>OTTIAQ</a>.",
     "page": "page",
     "quebec": "Quebec",
+    "rates": "Rates",
+    "rates-document": "Document",
+    "rates-rate": "Rate",
+    "rates-starts-at": "starts at",
     "romania": "Romania",
+    "services": "Services",
+    "services-certified-translations": "Certified translations from and into English, French and Romanian.",
+    "services-i-do-not-revise": "* I do not revise translations of official documents.",
+    "services-official-documents": "Official documents*, general translation, technical translation, legal translation (Power of Attorney, wills, Divorce Certificate).",
     "services-rates": "Services & rates",
     "testimonials": "Testimonials"
   }
