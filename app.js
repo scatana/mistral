@@ -2,6 +2,7 @@ const createError = require('http-errors');
 const express = require('express');
 const nunjucks = require('nunjucks');
 const i18n = require('i18n');
+const Intl = require('intl');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -28,8 +29,25 @@ const env = nunjucks.configure('views', {
   express: app
 });
 
-// nunjucks filters
+// nunjucks filter: asset path generator
 env.addFilter('asset', assetPath => path.join(assetsMountPoint, assetPath));
+
+// nunjucks global: number formatter
+env.addGlobal('nf', (number, locale) =>
+  Intl.NumberFormat(locale).format(number)
+);
+
+// nunjucks global: currency formatter
+env.addGlobal('cf', (amount, locale) =>
+  Intl.NumberFormat(locale, { style: 'currency', currency: 'CAD' }).formatToParts(amount)
+    .map(({type, value}) => {
+      switch(type) {
+        case 'currency': return '$';
+        default: return value;
+      }
+    })
+    .reduce((string, part) => string + part)
+);
 
 // configure view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));

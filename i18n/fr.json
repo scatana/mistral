@@ -44,6 +44,8 @@
     "page": "page",
     "quebec": "Québec",
     "rates": "Prix",
+    "rates-any-other": "Toute autre traduction commence à :",
+    "rates-any-other-0-2000": "%s / mot, jusqu'à %s mots",
     "rates-document": "Document",
     "rates-rate": "Prix",
     "rates-starts-at": "à partir de",

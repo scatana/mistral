@@ -44,6 +44,8 @@
     "page": "pagină",
     "quebec": "Quebec",
     "rates": "Tarife",
+    "rates-any-other": "Orice alte documente se tarifează de la:",
+    "rates-any-other-0-2000": "%s / cuvânt, până la %s cuvinte",
     "rates-document": "Document",
     "rates-rate": "Tarif",
     "rates-starts-at": "începând cu",

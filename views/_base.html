@@ -40,6 +40,14 @@
         src: url("{{ 'fonts/OpenSans-Regular.woff2' | asset }}") format("woff2"),
           url("{{ 'fonts/OpenSans-Regular.woff' | asset }}") format("woff");
       }
+      @font-face {
+        font-family: "OpenSans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: fallback;
+        src: url("{{ 'fonts/OpenSans-Bold.woff2' | asset }}") format("woff2"),
+          url("{{ 'fonts/OpenSans-Bold.woff' | asset }}") format("woff");
+      }
     </style>
 
     {% block styles %}{% endblock %}
