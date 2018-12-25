@@ -38,8 +38,8 @@
     "transcript-of-records": "Transcript of Records"
   },
   "content": {
-    "cash": "cash",
-    "check": "check",
+    "cash": "Cash",
+    "check": "Check",
     "contact": "Contact",
     "document": "Document",
     "email": "Email",
