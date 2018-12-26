@@ -15,14 +15,17 @@
   "routes": {
     "contact": {
       "path": "contact",
+      "title": "Contact",
       "description": ""
     },
     "services-rates": {
       "path": "services-prix",
-      "description": "Description des services, liste de prix"
+      "title": "Services et prix",
+      "description": "Services de traduction, liste de prix"
     },
     "testimonials": {
       "path": "temoignages",
+      "title": "Témoignages",
       "description": ""
     }
   },
@@ -40,7 +43,6 @@
   "content": {
     "cash": "Argent comptant",
     "check": "Chèque",
-    "contact": "Contact",
     "document": "Document",
     "email": "Courriel",
     "from-to": "Traductions de et en <a href='/fr'>français</a>, <a href='/en'>anglais</a>, <a href='/ro'>roumain</a>.",
@@ -65,8 +67,6 @@
     "services-certified-translations": "Traductions certifiées de et en français, anglais, roumain.",
     "services-i-do-not-revise": "* Je ne revise pas de traductions de documents officiels.",
     "services-official-documents": "Documents officiels<sup>*</sup>, traduction générale, traduction technique, traduction juridique (procurations, testaments, certificats de divorce).",
-    "services-rates": "Services et prix",
-    "testimonials": "Témoignages",
     "word": "mot"
   }
 }

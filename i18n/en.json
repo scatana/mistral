@@ -15,14 +15,17 @@
   "routes": {
     "contact": {
       "path": "contact",
+      "title": "Contact",
       "description": ""
     },
     "services-rates": {
       "path": "services-rates",
-      "description": "Description of services, price list"
+      "title": "Services & rates",
+      "description": "Translation services, price list"
     },
     "testimonials": {
       "path": "testimonials",
+      "title": "Testimonials",
       "description": ""
     }
   },
@@ -40,7 +43,6 @@
   "content": {
     "cash": "Cash",
     "check": "Check",
-    "contact": "Contact",
     "document": "Document",
     "email": "Email",
     "from-to": "Translations from and into <a href='/en'>English</a>, <a href='/fr'>French</a>, <a href='/ro'>Romanian</a>.",
@@ -65,8 +67,6 @@
     "services-certified-translations": "Certified translations from and into English, French, Romanian.",
     "services-i-do-not-revise": "* I do not revise translations of official documents.",
     "services-official-documents": "Official documents<sup>*</sup>, general translation, technical translation, legal translation (Power of Attorney, wills, Divorce Certificate).",
-    "services-rates": "Services & rates",
-    "testimonials": "Testimonials",
     "word": "word"
   }
 }

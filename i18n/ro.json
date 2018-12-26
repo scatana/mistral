@@ -15,14 +15,17 @@
   "routes": {
     "contact": {
       "path": "contact",
+      "title": "Contact",
       "description": ""
     },
     "services-rates": {
       "path": "servicii-tarife",
-      "description": "Descrierea serviciilor, lista de preturi"
+      "title": "Servicii și tarife",
+      "description": "Servicii de traducere, listă de prețuri"
     },
     "testimonials": {
       "path": "impresii",
+      "title": "Impresii",
       "description": ""
     }
   },
@@ -40,7 +43,6 @@
   "content": {
     "cash": "Numerar",
     "check": "Cec",
-    "contact": "Contact",
     "document": "Document",
     "email": "E-mail",
     "from-to": "Traduceri din și în <a href='/ro'>română</a>, <a href='/fr'>franceză</a>, <a href='/en'>engleză</a>.",
@@ -65,8 +67,6 @@
     "services-certified-translations": "Traduceri autorizate din și în română, franceză, engleză.",
     "services-i-do-not-revise": "* Nu revizuiesc traduceri de documente oficiale.",
     "services-official-documents": "Documente oficiale<sup>*</sup>, traduceri generale, traduceri tehnice, traduceri juridice (împuterniciri, testamente, certificate de divorț).",
-    "services-rates": "Servicii și tarife",
-    "testimonials": "Impresii",
     "word": "cuvânt"
   }
 }
