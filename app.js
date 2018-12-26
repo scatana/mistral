@@ -49,6 +49,9 @@ env.addGlobal('cf', (amount, locale) =>
     .reduce((string, part) => string + part)
 );
 
+// nunjucks global: get current date
+env.addGlobal('getDate', () => new Date());
+
 // configure view engine (nunjucks)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
