@@ -1,6 +1,6 @@
 // Save the requested locale into a cookie if it differs from the current locale;
 // the cookie should expire in one year
-module.exports = (req, res, next) => {
+function localeCookie(req, res, next) {
   const requestedLocale = req.baseUrl.split('/')[1];
   const currentLocale = req.getLocale();
 
@@ -13,3 +13,5 @@ module.exports = (req, res, next) => {
 
   next();
 };
+
+module.exports = { localeCookie };
