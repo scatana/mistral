@@ -8,6 +8,7 @@ const hdlr = require('./handlers');
 module.exports = locale => {
   const router = express.Router();
 
+  // Update the cookie when necessary
   router.use(mw.localeCookie);
 
   // Landing page
