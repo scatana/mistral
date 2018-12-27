@@ -16,7 +16,8 @@ function landing(req, res) {
 function services(req, res) {
   const data = {
     title: `${res.__('brand.name')} - ${res.__('routes.services.title')}`,
-    description: `${res.__('routes.services.description')}`
+    description: `${res.__('routes.services.description')}`,
+    headerTitle: res.__('routes.services.title')
   }
 
   res.render('services', data);
