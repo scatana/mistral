@@ -1,4 +1,5 @@
 {
+  "language": "Română",
   "brand": {
     "name": "Valentina Cătană",
     "description": "Traducător autorizat",
@@ -13,11 +14,6 @@
     "city": "Montreal"
   },
   "routes": {
-    "contact": {
-      "path": "contact",
-      "title": "Contact",
-      "description": ""
-    },
     "services": {
       "path": "servicii",
       "title": "Servicii și tarife",
@@ -26,6 +22,11 @@
     "testimonials": {
       "path": "impresii",
       "title": "Impresii",
+      "description": ""
+    },
+    "contact": {
+      "path": "contact",
+      "title": "Contact",
       "description": ""
     }
   },
@@ -46,8 +47,10 @@
     "document": "Document",
     "email": "E-mail",
     "from-to": "Traduceri din și în <a href='/ro'>română</a>, <a href='/fr'>franceză</a>, <a href='/en'>engleză</a>.",
+    "home": "Acasă",
     "languages": "Limbi",
     "member-of": "Membru al Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "navigation": "Navigare",
     "other": "Altele",
     "page": "pagină",
     "payment-methods": "Modalități de plată",
@@ -63,7 +66,6 @@
     "rates-mail-delivery": "Livrare standard prin poștă",
     "rates-rate": "Tarif",
     "rates-starts-at": "începând cu",
-    "resources": "Resurse",
     "romania": "România",
     "services": "Servicii",
     "services-certified-translations": "Traduceri autorizate din și în română, franceză, engleză.",

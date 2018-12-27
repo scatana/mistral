@@ -1,4 +1,5 @@
 {
+  "language": "English",
   "brand": {
     "name": "Valentina Catana",
     "description": "Certified Translator",
@@ -13,11 +14,6 @@
     "city": "Montreal"
   },
   "routes": {
-    "contact": {
-      "path": "contact",
-      "title": "Contact",
-      "description": ""
-    },
     "services": {
       "path": "services",
       "title": "Services & rates",
@@ -26,6 +22,11 @@
     "testimonials": {
       "path": "testimonials",
       "title": "Testimonials",
+      "description": ""
+    },
+    "contact": {
+      "path": "contact",
+      "title": "Contact",
       "description": ""
     }
   },
@@ -46,8 +47,10 @@
     "document": "Document",
     "email": "Email",
     "from-to": "Translations from and into <a href='/en'>English</a>, <a href='/fr'>French</a>, <a href='/ro'>Romanian</a>.",
+    "home": "Home",
     "languages": "Languages",
     "member-of": "Member of Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org/en' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "navigation": "Navigation",
     "other": "Other",
     "page": "page",
     "payment-methods": "Payment methods",
@@ -63,7 +66,6 @@
     "rates-mail-delivery": "Regular mail delivery",
     "rates-rate": "Rate",
     "rates-starts-at": "starts at",
-    "resources": "Resources",
     "romania": "Romania",
     "services": "Services",
     "services-certified-translations": "Certified translations from and into English, French, Romanian.",

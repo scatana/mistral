@@ -1,11 +1,16 @@
 <footer class="bg-dark text-light py-4">
   <div class="container small">
     <div class="row">
-      <div class="col-6 col-sm-4">
-        <span class="text-uppercase font-weight-bold">{{ __('content.resources') }}</span>
+      <div class="col-6 col-sm-4 d-flex flex-column">
+        <span class="text-uppercase font-weight-bold mb-2">{{ __('content.navigation') }}</span>
+        <a class="text-light py-1 my-1" href="/{{ locale }}">{{ __('content.home') }}</a>
       </div>
-      <div class="col-6 col-sm-4">
-        <span class="text-uppercase font-weight-bold">{{ __('content.languages') }}</span>
+      <div class="col-6 col-sm-4 d-flex flex-column">
+        <span class="text-uppercase font-weight-bold mb-2">{{ __('content.languages') }}</span>
+        {% for locale in getLocales() %}
+        {% set url = '/' + locale + '/' + __({ phrase: 'routes.' + route.stack[0].name + '.path', locale: locale }) %}
+        <a class="text-light py-1 my-1" href="{{ url }}">{{ __({ phrase: 'language', locale: locale }) }}</a>
+        {% endfor %}
       </div>
       <div class="col-12 col-sm-4">
         &copy; {{ getDate().getFullYear() }} {{ __('brand.name') }}
