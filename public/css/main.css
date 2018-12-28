@@ -126,3 +126,17 @@ h1, h2, h3, h4, h5, h6 {
     height: 32px;
   }
 }
+
+.copyright {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .copyright {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
+  }
+}
