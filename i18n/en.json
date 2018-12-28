@@ -22,12 +22,12 @@
     "testimonials": {
       "path": "testimonials",
       "title": "Testimonials",
-      "description": ""
+      "description": "Feedback from clients"
     },
     "contact": {
       "path": "contact",
       "title": "Contact",
-      "description": ""
+      "description": "Contact information"
     }
   },
   "documents": {

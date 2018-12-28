@@ -22,12 +22,12 @@
     "testimonials": {
       "path": "impresii",
       "title": "Impresii",
-      "description": ""
+      "description": "Impresii de la clienți"
     },
     "contact": {
       "path": "contact",
       "title": "Contact",
-      "description": ""
+      "description": "Informații de contact"
     }
   },
   "documents": {

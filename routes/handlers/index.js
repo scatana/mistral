@@ -1,7 +1,14 @@
 const sitemap = require('./sitemap');
 
 function contact(req, res) {
-  res.render('contact');
+  const data = {
+    title: `${res.__('brand.name')} - ${res.__('routes.contact.title')}`,
+    description: `${res.__('routes.contact.description')}`,
+    headerTitle: res.__('routes.contact.title'),
+    route: req.route // needed for the footer
+  };
+
+  res.render('contact', data);
 }
 
 function landing(req, res) {
@@ -18,14 +25,21 @@ function services(req, res) {
     title: `${res.__('brand.name')} - ${res.__('routes.services.title')}`,
     description: `${res.__('routes.services.description')}`,
     headerTitle: res.__('routes.services.title'),
-    route: req.route
-  }
+    route: req.route // needed for the footer
+  };
 
   res.render('services', data);
 }
 
 function testimonials(req, res) {
-  res.render('testimonials');
+  const data = {
+    title: `${res.__('brand.name')} - ${res.__('routes.testimonials.title')}`,
+    description: `${res.__('routes.testimonials.description')}`,
+    headerTitle: res.__('routes.testimonials.title'),
+    route: req.route // needed for the footer
+  };
+
+  res.render('testimonials', data);
 }
 
 module.exports = {

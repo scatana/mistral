@@ -1,5 +1,7 @@
 {% extends '_main.html' %}
 
 {% block body %}
-  <p>testimonials</p>
+  {% set currentPage = 'testimonials' %}
+  {% include 'partials/header.html' %}
+  {% include 'partials/footer.html' %}
 {% endblock %}
