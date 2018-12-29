@@ -36,6 +36,7 @@ function testimonials(req, res) {
     title: `${res.__('brand.name')} - ${res.__('routes.testimonials.title')}`,
     description: `${res.__('routes.testimonials.description')}`,
     headerTitle: res.__('routes.testimonials.title'),
+    testimonials: require('../data/testimonials_' + res.getLocale() + '.json'),
     route: req.route // needed for the footer
   };
 
