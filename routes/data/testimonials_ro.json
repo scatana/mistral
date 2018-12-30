@@ -15,26 +15,31 @@
     "review": "Colaborez cu Valentina Cătană din 2015 și sunt foarte mulțumit de profesionalismul de care dă dovadă, apreciez foarte mult serviciul prompt și de calitate. Serviciul este excelent. O recomand oricând cu plăcere."
   },
   {
-    "name": "Lilia Tălmaci, notar",
-    "location": "Montreal",
-    "review": "Valentina este un adevărat profesional în ceea ce face, este corectă și rapidă și pe lângă astea mai este și o persoană foarte drăguță și plăcută. O recomand oricui care are nevoie de servicii rapide și de calitate!"
-  },
-  {
+    "date": "2017-02-08",
     "name": "Alexandru Ghiță",
     "location": "Quebec City",
     "review": "Bună ziua. Am avut nevoie rapid de o traducere pentru Permisul de Conducere românesc în Quebec City. Cum pentru o astfel de traducere trebuie un traducător care să facă parte din ordinul traducătorilor recunoscuți de Poliția Canadiană și instituțiile juridice Canadiene a trebuit să caut și din păcate în Quebec City nu era cineva pe limba română disponibil. D-na Valentina a înțeles situația și distanța și am rezolvat tot prin plata la distanță și email și Regular Mail. Problema rezolvată în 48 de ore! Foarte mulțumit!"
   },
   {
+    "date": "2017-02-10",
+    "name": "Lilia Tălmaci, notar",
+    "location": "Montreal",
+    "review": "Valentina este un adevărat profesional în ceea ce face, este corectă și rapidă și pe lângă astea mai este și o persoană foarte drăguță și plăcută. O recomand oricui care are nevoie de servicii rapide și de calitate!"
+  },
+  {
+    "date": "2017-02-15",
     "name": "Alexandru Isac",
     "location": "Laval",
     "review": "Serviciu de calitate, foarte rapid și profesional. Comunicare foarte rapidă și la punct, via email. Recomand cu 5 stele."
   },
   {
+    "date": "2017-03-28",
     "name": "Irina Cervinski",
     "location": "Gatineau",
     "review": "Profesionalism, rapiditate, calitate!!! Mulțumesc mult pentru serviciile oferite."
   },
   {
+    "date": "2017-10-16",
     "name": "Radu Iosif",
     "location": "Montreal",
     "review": "Valentina m-a ajutat cu traducerea unui act notarial foarte complex. Mi-a inspirat încredere de la început până la sfârșit. Sunt foarte mulțumit de alegerea făcută. Mulțumesc încă o dată!"
@@ -45,16 +50,19 @@
     "review": "Ați fost foarte profesională și o să vă recomand la cunoscuți."
   },
   {
+    "date": "2017-11-15",
     "name": "Cristi Vișan",
     "location": "Montreal",
     "review": "Este a doua oară când apelez la serviciile d-nei Valentina și cu siguranță voi apela de fiecare dată datorită promptitudinei și profesionalismului de care dă dovadă."
   },
   {
+    "date": "2018-01-05",
     "name": "Alexandra Log",
     "location": "Montreal",
     "review": "Sunt plăcut impresionată de rapiditatea și seriozitatea Valentinei! Am găsit pe internet site-ul ei și recomand cu încredere serviciile oferite. Valentina este extrem de promptă și drăguță. Mulțumesc mult."
   },
   {
+    "date": "2018-01-26",
     "name": "Claudiu Mihael Terenche",
     "location": "Montreal",
     "review": "Sunt foarte mulțumit. Traducerile au fost făcute întotdeauna la timp. Când nu am putut ridica originalele, și am avut nevoie de ele în format electronic, am primit foarte rapid pe mail traducerile. Plata foarte convenabilă pentru mine, prin interac."
