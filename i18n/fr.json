@@ -41,7 +41,7 @@
     "power-of-attorney": "Procuration",
     "transcript-of-records": "Relevé de notes"
   },
-  "content": {
+  "strings": {
     "cash": "Argent comptant",
     "check": "Chèque",
     "document": "Document",
@@ -51,6 +51,8 @@
     "language": "Langue",
     "member-of": "Membre de l'Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
     "menu": "Menu",
+    "message": "Message",
+    "name": "Nom",
     "navigation": "Navigation",
     "other": "Autre",
     "page": "page",
@@ -72,6 +74,7 @@
     "services-certified-translations": "Traductions certifiées de et en français, anglais, roumain.",
     "services-i-do-not-revise": "* Je ne revise pas de traductions de documents officiels.",
     "services-official-documents": "Documents officiels<sup>*</sup>, traduction générale, traduction technique, traduction juridique (procurations, testaments, certificats de divorce).",
+    "submit": "Envoyer",
     "word": "mot"
   }
 }

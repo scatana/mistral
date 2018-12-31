@@ -41,7 +41,7 @@
     "power-of-attorney": "Power of Attorney",
     "transcript-of-records": "Transcript of Records"
   },
-  "content": {
+  "strings": {
     "cash": "Cash",
     "check": "Check",
     "document": "Document",
@@ -51,6 +51,8 @@
     "language": "Language",
     "member-of": "Member of Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org/en' target='_blank' rel='noopener'>OTTIAQ</a>.",
     "menu": "Menu",
+    "message": "Message",
+    "name": "Name",
     "navigation": "Navigation",
     "other": "Other",
     "page": "page",
@@ -67,11 +69,13 @@
     "rates-mail-delivery": "Regular mail delivery",
     "rates-rate": "Rate",
     "rates-starts-at": "starts at",
+    "review": "Review",
     "romania": "Romania",
     "services": "Services",
     "services-certified-translations": "Certified translations from and into English, French, Romanian.",
     "services-i-do-not-revise": "* I do not revise translations of official documents.",
     "services-official-documents": "Official documents<sup>*</sup>, general translation, technical translation, legal translation (Power of Attorney, wills, Divorce Certificate).",
+    "submit": "Submit",
     "word": "word"
   }
 }

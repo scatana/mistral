@@ -7,21 +7,21 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="text-muted text-center mb-3">{{ __('content.services') }}</h2>
-          <p class="lead">{{ __('content.services-certified-translations') }}</p>
-          <p>{{ __('content.services-official-documents') | safe }}</p>
-          <small class="text-muted">{{ __('content.services-i-do-not-revise') }}</small>
+          <h2 class="text-muted text-center mb-3">{{ __('strings.services') }}</h2>
+          <p class="lead">{{ __('strings.services-certified-translations') }}</p>
+          <p>{{ __('strings.services-official-documents') | safe }}</p>
+          <small class="text-muted">{{ __('strings.services-i-do-not-revise') }}</small>
         </div>
       </div>
       <div class="row my-4">
         <div class="col">
-          <h2 class="text-muted text-center mb-3">{{ __('content.rates') }}</h2>
+          <h2 class="text-muted text-center mb-3">{{ __('strings.rates') }}</h2>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between">
-              <strong>{{ __('content.document') }}</strong>
+              <strong>{{ __('strings.document') }}</strong>
               <div class="text-right ml-3">
-                <strong class="text-nowrap d-block">{{ __('content.rates-rate') }} (CAD)</strong>
-                <small class="badge badge-info">{{ __('content.rates-starts-at') }}</small>
+                <strong class="text-nowrap d-block">{{ __('strings.rates-rate') }} (CAD)</strong>
+                <small class="badge badge-info">{{ __('strings.rates-starts-at') }}</small>
               </div>
             </li>
             <li class="list-group-item d-flex justify-content-between">
@@ -43,16 +43,16 @@
             <li class="list-group-item d-flex justify-content-between">
               <div>
                 <span class="d-block">{{ __('documents.divorce-decision') }}</span>
-                <small class="text-muted">{{ __('content.quebec') }}</small>
+                <small class="text-muted">{{ __('strings.quebec') }}</small>
               </div>
               <span class="text-muted text-nowrap ml-3">{{ cf(30, locale) }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <div>
                 <span class="d-block">{{ __('documents.divorce-decision') }}</span>
-                <small class="text-muted">{{ __('content.romania') }}</small>
+                <small class="text-muted">{{ __('strings.romania') }}</small>
               </div>
-              <span class="text-muted text-nowrap ml-3">{{ cf(50, locale) }} / {{ __('content.page') }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(50, locale) }} / {{ __('strings.page') }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>{{ __('documents.drivers-license') }}</span>
@@ -60,11 +60,11 @@
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>{{ __('documents.high-school-university-diploma') }}</span>
-              <span class="text-muted text-nowrap ml-3">{{ cf(30, locale) }} / {{ __('content.page') }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(30, locale) }} / {{ __('strings.page') }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>{{ __('documents.power-of-attorney') }}</span>
-              <span class="text-muted text-nowrap ml-3">{{ cf(40, locale) }} / {{ __('content.page') }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(40, locale) }} / {{ __('strings.page') }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>{{ __('documents.transcript-of-records') }}</span>
@@ -77,23 +77,23 @@
         <div class="col">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between">
-              <strong>{{ __('content.rates-general') }}</strong>
+              <strong>{{ __('strings.rates-general') }}</strong>
               <div class="text-right ml-3">
-                <strong class="text-nowrap d-block">{{ __('content.rates-rate') }} (CAD)</strong>
-                <small class="badge badge-info">{{ __('content.rates-starts-at') }}</small>
+                <strong class="text-nowrap d-block">{{ __('strings.rates-rate') }} (CAD)</strong>
+                <small class="badge badge-info">{{ __('strings.rates-starts-at') }}</small>
               </div>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>{{ __('content.rates-general-0-2000', nf(2000, locale)) }}</span>
-              <span class="text-muted text-nowrap ml-3">{{ cf(0.18, locale) }} / {{ __('content.word') }}</span>
+              <span>{{ __('strings.rates-general-0-2000', nf(2000, locale)) }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(0.18, locale) }} / {{ __('strings.word') }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>{{ __('content.rates-general-2000-5000', nf(2000, locale), nf(5000, locale)) }}</span>
-              <span class="text-muted text-nowrap ml-3">{{ cf(0.15, locale) }} / {{ __('content.word') }}</span>
+              <span>{{ __('strings.rates-general-2000-5000', nf(2000, locale), nf(5000, locale)) }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(0.15, locale) }} / {{ __('strings.word') }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>{{ __('content.rates-general-5000-plus', nf(5000, locale)) }}</span>
-              <span class="text-muted text-nowrap ml-3">{{ cf(0.13, locale) }} / {{ __('content.word') }}</span>
+              <span>{{ __('strings.rates-general-5000-plus', nf(5000, locale)) }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(0.13, locale) }} / {{ __('strings.word') }}</span>
             </li>
           </ul>
         </div>
@@ -102,21 +102,21 @@
         <div class="col">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between">
-              <strong>{{ __('content.other') }}</strong>
+              <strong>{{ __('strings.other') }}</strong>
               <div class="text-right ml-3">
-                <strong class="text-nowrap d-block">{{ __('content.rates-rate') }} (CAD)</strong>
+                <strong class="text-nowrap d-block">{{ __('strings.rates-rate') }} (CAD)</strong>
               </div>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>{{ __('content.rates-emergency') }}</span>
+              <span>{{ __('strings.rates-emergency') }}</span>
               <span class="text-muted text-nowrap ml-3">+ 30%</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>{{ __('content.rates-extra-copies') }}</span>
-              <span class="text-muted text-nowrap ml-3">{{ cf(10, locale) }} / {{ __('content.document') | lower }}</span>
+              <span>{{ __('strings.rates-extra-copies') }}</span>
+              <span class="text-muted text-nowrap ml-3">{{ cf(10, locale) }} / {{ __('strings.document') | lower }}</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
-              <span>{{ __('content.rates-mail-delivery') }}</span>
+              <span>{{ __('strings.rates-mail-delivery') }}</span>
               <span class="text-muted text-nowrap ml-3">{{ cf(10, locale) }}</span>
             </li>
           </ul>
@@ -124,19 +124,19 @@
       </div>
       <div class="row mt-4">
         <div class="col-12">
-          <h3 class="text-muted text-center mb-3">{{ __('content.payment-methods') }}</h3>
+          <h3 class="text-muted text-center mb-3">{{ __('strings.payment-methods') }}</h3>
         </div>
         <div class="w-100"></div>
         <div class="col-sm-6 mb-3">
           <div class="row h-100">
             <div class="col mr-n2 mr-sm-0">
               <div class="border border-secondary rounded h-100 py-2 font-weight-bold text-center d-flex flex-column justify-content-center align-items-center">
-                <span>{{ __('content.cash') }}</span>
+                <span>{{ __('strings.cash') }}</span>
               </div>
             </div>
             <div class="col ml-n2 ml-sm-0">
               <div class="border border-secondary rounded h-100 py-2 font-weight-bold text-center d-flex flex-column justify-content-center align-items-center">
-                <span>{{ __('content.check') }}</span>
+                <span>{{ __('strings.check') }}</span>
               </div>
             </div>
           </div>

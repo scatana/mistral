@@ -6,22 +6,22 @@
   <main class="bg-light py-4">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 d-flex align-items-center">
-          <p class="lead">If you were happy with my services, please leave a review on <a href="https://search.google.com/local/writereview?placeid=ChIJAQYDSF4XyUwRnwEc7TW7aSA" target="_blank" rel="noopener">Google</a> or use the form on this page. Thanks!</p>
+        <div class="col-md-6 d-flex align-items-center">
+          <p class="lead">If you were happy with my services, please leave a review on <a href="https://search.google.com/local/writereview?placeid=ChIJAQYDSF4XyUwRnwEc7TW7aSA" target="_blank" rel="noopener">Google</a> or use the form on this page. <span class="text-nowrap">Thank you!</span></p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <hr class="w-50 d-sm-none">
           <form>
             <div class="form-group">
-              <label for="inputName">Name</label>
+              <label for="inputName">{{ __('strings.name') }}</label>
               <input type="text" class="form-control" id="inputName">
             </div>
             <div class="form-group">
-              <label for="inputMessage">Message</label>
+              <label for="inputMessage">{{ __('strings.message') }}</label>
               <textarea class="form-control" id="inputMessage"></textarea>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">{{ __('strings.submit') }}</button>
             </div>
           </form>
         </div>
