@@ -1,15 +1,18 @@
 [
   {
+    "date": "2017-01-10",
     "name": "Ionuț Gex",
     "location": "Montreal",
     "review": "Foarte repede și profesional am fost primit si rezolvat cu traducerea permisului de conducere românesc. Recomand tuturor serviciile doamnei Valentina. \"Bonus\" am primit si o mână de șervețele :)) pentru că eram în prima mea lună în Canada și câteva sfaturi vis-à-vis de una și de alta."
   },
   {
+    "date": "2017-01-15",
     "name": "Isabela Ene",
     "location": "Montreal",
     "review": "Mulțumesc foarte mult pentru ajutor! Când am sunat prima dată pentru a întreba de serviciile oferite, ai explicat cu răbdare procedura de lucru și mi-ai dat sfaturi foarte utile. Mai mult decât atât, ai facut traducerile extrem de rapid și profesional. Voi recomanda cu siguranță serviciile tale oricui ar avea nevoie de traduceri. Mulțumesc din nou pentru tot."
   },
   {
+    "date": "2017-01-28",
     "name": "Anton Morogan, notar",
     "location": "Montreal",
     "review": "Colaborez cu Valentina Cătană din 2015 și sunt foarte mulțumit de profesionalismul de care dă dovadă, apreciez foarte mult serviciul prompt și de calitate. Serviciul este excelent. O recomand oricând cu plăcere."
@@ -45,6 +48,7 @@
     "review": "Valentina m-a ajutat cu traducerea unui act notarial foarte complex. Mi-a inspirat încredere de la început până la sfârșit. Sunt foarte mulțumit de alegerea făcută. Mulțumesc încă o dată!"
   },
   {
+    "date": "2017-11-02",
     "name": "George Brezuica",
     "location": "Montreal",
     "review": "Ați fost foarte profesională și o să vă recomand la cunoscuți."
