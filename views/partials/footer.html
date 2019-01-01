@@ -11,8 +11,12 @@
       <div class="col-6 col-sm-4 d-flex flex-column">
         <span class="text-uppercase font-weight-bold mb-2">{{ __('strings.language') }}</span>
         {% for locale in getLocales() %}
-        {% set url = '/' + locale + '/' + __({ phrase: 'routes.' + route.stack[0].name + '.path', locale: locale }) %}
-        <a class="text-light py-1 my-1" href="{{ url }}">{{ __({ phrase: 'language', locale: locale }) }}</a>
+          {% if route.stack[0].name %}
+            {% set url = '/' + locale + '/' + __({ phrase: 'routes.' + route.stack[0].name + '.path', locale: locale }) %}
+          {% else %}
+            {% set url = '/' + locale %}
+          {% endif %}
+          <a class="text-light py-1 my-1" href="{{ url }}">{{ __({ phrase: 'language', locale: locale }) }}</a>
         {% endfor %}
       </div>
       <div class="col-12 col-sm-4 copyright">
