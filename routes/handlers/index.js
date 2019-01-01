@@ -31,14 +31,6 @@ function services(req, res) {
   res.render('services', data);
 }
 
-function testimonial(req, res) {
-  const data = {
-    headerTitle: res.__('strings.thank-you')
-  };
-
-  res.render('thanks', data);
-}
-
 function testimonials(req, res) {
   const data = {
     title: `${res.__('brand.name')} - ${res.__('routes.testimonials.title')}`,
@@ -51,11 +43,19 @@ function testimonials(req, res) {
   res.render('testimonials', data);
 }
 
+function thanks(req, res) {
+  const data = {
+    headerTitle: res.__('strings.thank-you')
+  };
+
+  res.render('thanks', data);
+}
+
 module.exports = {
   contact,
   landing,
   services,
   sitemap,
-  testimonial,
-  testimonials
+  testimonials,
+  thanks
 }

@@ -11,7 +11,7 @@
         </div>
         <div class="col-md-6">
           <hr class="w-50 d-sm-none">
-          <form action="/testimonial" method="post">
+          <form action="{{ baseURL }}/{{ __('routes.thanks.path') }}" method="post">
             <div class="form-group">
               <label for="inputName">{{ __('strings.name') }}</label>
               <input type="text" class="form-control" id="inputName">

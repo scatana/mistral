@@ -13,6 +13,4 @@ router.get('/googleac28af5e7ded36ba.html', (req, res) =>
 
 router.get('/sitemap.xml', handlers.sitemap);
 
-router.post('/testimonial', handlers.testimonial);
-
 module.exports = router;

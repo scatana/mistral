@@ -15,19 +15,28 @@
   },
   "routes": {
     "services": {
+      "_type": "get",
       "path": "servicii",
       "title": "Servicii și tarife",
       "description": "Servicii de traducere, listă de prețuri"
     },
     "testimonials": {
+      "_type": "get",
       "path": "impresii",
       "title": "Impresii",
       "description": "Impresii de la clienți"
     },
     "contact": {
+      "_type": "get",
       "path": "contact",
       "title": "Contact",
       "description": "Informații de contact"
+    },
+    "thanks": {
+      "_type": "post",
+      "path": "multumesc",
+      "title": "Mulțumesc!",
+      "description": "Pagină de mulțumiri"
     }
   },
   "documents": {

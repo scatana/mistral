@@ -15,19 +15,28 @@
   },
   "routes": {
     "services": {
+      "_type": "get",
       "path": "services",
       "title": "Services & rates",
       "description": "Translation services, price list"
     },
     "testimonials": {
+      "_type": "get",
       "path": "testimonials",
       "title": "Testimonials",
       "description": "Feedback from clients"
     },
     "contact": {
+      "_type": "get",
       "path": "contact",
       "title": "Contact",
       "description": "Contact information"
+    },
+    "thanks": {
+      "_type": "post",
+      "path": "thank-you",
+      "title": "Thank you!",
+      "description": "Thank you page"
     }
   },
   "documents": {
