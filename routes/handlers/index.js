@@ -1,3 +1,5 @@
+const nodemailer = require('nodemailer');
+
 const sitemap = require('./sitemap');
 
 function contact(req, res) {
@@ -47,6 +49,31 @@ function thanks(req, res) {
   const data = {
     headerTitle: res.__('strings.thank-you')
   };
+
+  const MAIL_TRANSPORT_USER = process.env.MAIL_TRANSPORT_USER;
+  const MAIL_TRANSPORT_SECRET = process.env.MAIL_TRANSPORT_SECRET;
+  const r = /(https?|mailto|ftp):/;
+
+  if (r.test(req.body.message)) {
+      res.render('thanks', data);
+  } else if (MAIL_TRANSPORT_USER && MAIL_TRANSPORT_SECRET) {
+      const transporter = nodemailer.createTransport({
+          service: 'Gmail',
+          auth: {
+              user: MAIL_TRANSPORT_USER,
+              pass: MAIL_TRANSPORT_SECRET
+          }
+      });
+
+      const mailOptions = {
+          from: '"Impresii clienți" <impresii@valentinacatana.com>',
+          to: 'valentina.catana@gmail.com',
+          subject: 'Impresii clienți',
+          html: '<b>' + req.body.name + '</b><p>' + req.body.message + '</p>'
+      };
+
+      transporter.sendMail(mailOptions, function (error, info) {});
+  }
 
   res.render('thanks', data);
 }

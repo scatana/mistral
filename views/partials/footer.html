@@ -5,7 +5,9 @@
         <span class="text-uppercase font-weight-bold mb-2">{{ __('strings.navigation') }}</span>
         <a class="text-light py-1 my-1" href="/{{ locale }}">{{ __('strings.home') }}</a>
         {% for route, routeInfo in __('routes') %}
-        <a class="text-light py-1 my-1" href="{{ baseURL + '/' + routeInfo.path }}">{{ routeInfo.title }}</a>
+          {% if routeInfo._type === 'get' %}
+            <a class="text-light py-1 my-1" href="{{ baseURL + '/' + routeInfo.path }}">{{ routeInfo.title }}</a>
+          {% endif %}
         {% endfor %}
       </div>
       <div class="col-6 col-sm-4 d-flex flex-column">
