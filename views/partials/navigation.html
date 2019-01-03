@@ -11,7 +11,15 @@
     </button>
 
     <div class="navbar-collapse offcanvas-collapse">
+      <div class="text-uppercase font-weight-bold mb-2 d-md-none border-top border-secondary">
+        <div class="badge badge-info mt-3">{{ __('strings.navigation') }}</div>
+      </div>
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-md-none">
+          <a class="nav-link px-0 ml-4" href="{{ baseURL }}">
+            {{ __('strings.home') }}
+          </a>
+        </li>
         <li class="nav-item{{ ' active' if currentPage === 'services' }}">
           <a class="nav-link px-0 ml-4" href="{{ baseURL }}/{{ __('routes.services.path') }}">
             {{ __('routes.services.title') }}
@@ -27,6 +35,23 @@
             {{ __('routes.contact.title') }}
           </a>
         </li>
+      </ul>
+      <div class="text-uppercase font-weight-bold mb-2 d-md-none">
+        <div class="badge badge-info mt-3">{{ __('strings.language') }}</div>
+      </div>
+      <ul class="navbar-nav ml-auto d-md-none">
+      {% for locale in getLocales() %}
+        {% if route.stack[0].name %}
+          {% set url = '/' + locale + '/' + __({ phrase: 'routes.' + route.stack[0].name + '.path', locale: locale }) %}
+        {% else %}
+          {% set url = '/' + locale %}
+        {% endif %}
+        <li class="nav-item{{ ' active' if locale === getLocale() }}">
+          <a class="nav-link px-0 ml-4" href="{{ url }}">
+            {{ __({ phrase: 'language', locale: locale }) }}
+          </a>
+        </li>
+      {% endfor %}
       </ul>
     </div>
   </div>

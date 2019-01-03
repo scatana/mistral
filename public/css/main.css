@@ -100,6 +100,9 @@ textarea {
     overflow-y: auto;
     visibility: hidden;
     background-color: #fff;
+    background-image: url(../img/corner.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
