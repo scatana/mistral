@@ -3,9 +3,10 @@
 {% block body %}
   {% set currentPage = 'thanks' %}
   {% include 'partials/header.html' %}
-  <main class="bg-light py-4 flex-grow-1 d-flex align-items-center">
-    <div class="container">
-      <p class="lead text-center">{{ __('strings.thank-you-feedback') }}</p>
+  <main class="bg-light py-4 flex-grow-1">
+    <div class="container h-100 d-flex flex-column align-items-center justify-content-center">
+      <p class="lead text-center mb-4">{{ __('strings.thank-you-feedback') }}</p>
+      <p class="text-center">{{ __('strings.I-am-glad') }}</p>
     </div>
   </main>
   {% include 'partials/footer.html' %}
