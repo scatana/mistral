@@ -4,6 +4,36 @@
   {% set currentPage = 'contact' %}
   {% include 'partials/header.html' %}
   <main class="bg-light py-4 flex-grow-1">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-muted text-center mb-3">{{ __('strings.phone') }}</h2>
+          <p class="text-center">
+            <a href="tel:+01-514-739-3882"><span class="h5">{{ __('contact.phone') }}</span></a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col my-4">
+          <h2 class="text-muted text-center mb-3">{{ __('strings.email') }}</h2>
+          <p class="text-center">
+            <a href="mailto:{{ __('contact.email') }}"><span class="h5">{{ __('contact.email') }}</span></a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2 class="text-muted text-center mb-3">{{ __('strings.general-location') }}</h2>
+          <p class="text-center mb-3">{{ __('strings.close-to') }}</p>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
   </main>
   {% include 'partials/footer.html' %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBClz9xb86x6fX_GtGD7A-bsZV0U7hoBiM&amp;callback=initMap&amp;language={{ getLocale() }}" async defer></script>
 {% endblock %}
