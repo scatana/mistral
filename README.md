@@ -197,3 +197,17 @@ $ sudo ln -s /etc/nginx/sites-available/<domain> /etc/nginx/sites-enabled/
 $ sudo systemctl restart nginx
 ```
 
+## Set up SSL certificates
+
+1. Install Certbot
+```bash
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt install python-certbot-nginx
+```
+
+2. Obtain the certificate
+
+    Before continuing make sure that DNS A records point to the droplet.
+    ```bash
+    $ sudo certbot --nginx -d <domain> -d www.<domain> -d staging.<domain>
+    ```
