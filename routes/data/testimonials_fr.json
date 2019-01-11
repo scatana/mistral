@@ -1,15 +1,9 @@
 [
   {
-    "date": "2017-02-10",
-    "name": "Lilia Talmaci, notaire",
+    "date": "2018-08-16",
+    "name": "Radu",
     "location": "Montréal",
-    "review": "Valentina est un vrai professionnel dans ce qu'elle fait, est bonne et rapide et d'ailleurs est une personne très gentille et agréable. Je la recommande à tout le monde qui a besoin d'un service rapide et de qualité!"
-  },
-  {
-    "date": "2017-03-26",
-    "name": "Julien K.",
-    "location": "Montréal",
-    "review": "Valentina est très professionnelle, et elle offre un service rapide et très bien fait. Je la recommande à quiconque aurait besoin d'une traduction précise, et ce dans un délai vraiment raisonnable."
+    "review": "Bon travail à temps. Merci!"
   },
   {
     "date": "2017-06-26",
@@ -18,9 +12,15 @@
     "review": "Valentina réponds à toutes les exigences d’une excellente professionnelle : qualité des services offerts, promptitude, corrélation équitable entre le prix et la qualité des services. De plus, elle est une personne très agréable est positive."
   },
   {
-    "date": "2018-08-16",
-    "name": "Radu",
+    "date": "2017-03-26",
+    "name": "Julien K.",
     "location": "Montréal",
-    "review": "Bon travail à temps. Merci!"
+    "review": "Valentina est très professionnelle, et elle offre un service rapide et très bien fait. Je la recommande à quiconque aurait besoin d'une traduction précise, et ce dans un délai vraiment raisonnable."
+  },
+  {
+    "date": "2017-02-10",
+    "name": "Lilia Talmaci, notaire",
+    "location": "Montréal",
+    "review": "Valentina est un vrai professionnel dans ce qu'elle fait, est bonne et rapide et d'ailleurs est une personne très gentille et agréable. Je la recommande à tout le monde qui a besoin d'un service rapide et de qualité!"
   }
 ]
