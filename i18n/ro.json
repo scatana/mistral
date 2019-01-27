@@ -4,7 +4,7 @@
     "name": "Valentina Cătană",
     "description": "Traducător autorizat",
     "service-type": "Servicii de traducere",
-    "service-description": "Traduceri autorizate din și în română, franceză și engleză. Traducător autorizat în Montreal, Quebec, Canada. Documente oficiale, texte generale, subtitrări."
+    "service-description": "Traducător autorizat Montreal, Quebec, Canada. Traduceri autorizate din și în română, franceză, engleză. Documente oficiale, texte generale, subtitrări."
   },
   "contact": {
     "fname": "Valentina",
@@ -24,19 +24,19 @@
       "_type": "get",
       "path": "impresii",
       "title": "Impresii",
-      "description": "Impresii de la clienți"
+      "description": "Impresii clienți"
     },
     "contact": {
       "_type": "get",
       "path": "contact",
       "title": "Contact",
-      "description": "Informații de contact"
+      "description": "Informații contact"
     },
     "thanks": {
       "_type": "post",
       "path": "multumesc",
       "title": "Mulțumesc!",
-      "description": "Pagină de mulțumiri"
+      "description": "Mulțumiri"
     }
   },
   "documents": {

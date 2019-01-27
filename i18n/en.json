@@ -4,7 +4,7 @@
     "name": "Valentina Catana",
     "description": "Certified Translator",
     "service-type": "Translation Services",
-    "service-description": "Certified translations from and into English, French and Romanian. Certified translator in Montreal, Quebec, Canada. Official documents, general texts, subtitling."
+    "service-description": "Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling."
   },
   "contact": {
     "fname": "Valentina",
@@ -36,7 +36,7 @@
       "_type": "post",
       "path": "thank-you",
       "title": "Thank you!",
-      "description": "Thank you page"
+      "description": "Thanks"
     }
   },
   "documents": {
