@@ -24,28 +24,14 @@ $(function () {
   updateNavbar();
 
   $(window).scroll(updateNavbar);
+
+  let map = L.map('map', {
+    scrollWheelZoom: false
+  }).setView([45.484780, -73.641709], 14);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  L.marker([45.484780, -73.641709]).addTo(map)
 });
-
-function initMap() {
-  let myLatLng = { lat: 45.484780, lng: -73.641709 };
-
-  let map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatLng,
-    disableDefaultUI: true,
-    fullscreenControl: true,
-    scrollwheel: false,
-    zoom: 14,
-    zoomControl: true
-  });
-
-  let marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map
-  });
-
-  google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(myLatLng);
-  });
-
-  google.maps.event.trigger(map, 'resize');
-}

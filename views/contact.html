@@ -1,5 +1,10 @@
 {% extends '_main.html' %}
 
+{% block styles %}
+  <link rel="stylesheet" href="{{ 'css/vendor/leaflet.css' | asset }}">
+  {{ super() }}
+{% endblock %}
+
 {% block body %}
   {% set currentPage = 'contact' %}
   {% include 'partials/header.html' %}
@@ -34,6 +39,6 @@
 {% endblock %}
 
 {% block scripts %}
+  <script src="{{ 'js/vendor/leaflet.js' | asset }}"></script>
   {{ super() }}
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBClz9xb86x6fX_GtGD7A-bsZV0U7hoBiM&amp;callback=initMap&amp;language={{ getLocale() }}" async defer></script>
 {% endblock %}
