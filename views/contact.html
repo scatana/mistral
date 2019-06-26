@@ -1,8 +1,8 @@
 {% extends '_main.html' %}
 
 {% block styles %}
-  <link rel="stylesheet" href="{{ 'css/vendor/leaflet.css' | asset }}">
   {{ super() }}
+  <link rel="stylesheet" href="{{ 'css/vendor/leaflet.css' | asset }}">
 {% endblock %}
 
 {% block body %}
@@ -39,6 +39,17 @@
 {% endblock %}
 
 {% block scripts %}
-  <script src="{{ 'js/vendor/leaflet.js' | asset }}"></script>
   {{ super() }}
+  <script src="{{ 'js/vendor/leaflet.js' | asset }}"></script>
+  <script>
+    let map = L.map('map', {
+      scrollWheelZoom: false
+    }).setView([45.484780, -73.641709], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([45.484780, -73.641709]).addTo(map);
+  </script>
 {% endblock %}

@@ -24,14 +24,4 @@ $(function () {
   updateNavbar();
 
   $(window).scroll(updateNavbar);
-
-  let map = L.map('map', {
-    scrollWheelZoom: false
-  }).setView([45.484780, -73.641709], 14);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-
-  L.marker([45.484780, -73.641709]).addTo(map)
 });
