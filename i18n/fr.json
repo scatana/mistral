@@ -3,7 +3,6 @@
   "brand": {
     "name": "Valentina Catana",
     "description": "Traducteur agréé",
-    "service-type": "Services de traduction",
     "service-description": "Traducteur agréé Montréal, Québec, Canada. Traductions certifiées de et en français, anglais, roumain. Documents officiels, textes généraux, sous-titrage."
   },
   "contact": {
@@ -64,7 +63,7 @@
     "language": "Langue",
     "logo-interac": "Logo Interac eTransfer",
     "logo-paypal": "Logo PayPal",
-    "member-of": "Membre de l'Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "member-of": "Membre <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
     "menu": "Menu",
     "message": "Message",
     "name": "Nom",

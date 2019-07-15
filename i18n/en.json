@@ -3,7 +3,6 @@
   "brand": {
     "name": "Valentina Catana",
     "description": "Certified Translator",
-    "service-type": "Translation Services",
     "service-description": "Certified translator Montreal, Quebec, Canada. Certified translations from and into English, French, Romanian. Official documents, general texts, subtitling."
   },
   "contact": {
@@ -64,7 +63,7 @@
     "language": "Language",
     "logo-interac": "Interac eTransfer logo",
     "logo-paypal": "PayPal logo",
-    "member-of": "Member of Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org/en' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "member-of": "Member of <a href='https://ottiaq.org/en' target='_blank' rel='noopener'>OTTIAQ</a>.",
     "menu": "Menu",
     "message": "Message",
     "name": "Name",

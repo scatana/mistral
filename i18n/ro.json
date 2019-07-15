@@ -3,7 +3,6 @@
   "brand": {
     "name": "Valentina Cătană",
     "description": "Traducător autorizat",
-    "service-type": "Servicii de traducere",
     "service-description": "Traducător autorizat Montreal, Quebec, Canada. Traduceri autorizate din și în română, franceză, engleză. Documente oficiale, texte generale, subtitrări."
   },
   "contact": {
@@ -64,7 +63,7 @@
     "language": "Limba",
     "logo-interac": "Logo Interac eTransfer",
     "logo-paypal": "Logo PayPal",
-    "member-of": "Membru al Ordre des traducteurs, terminologues et interprètes agréés du Québec - <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
+    "member-of": "Membru <a href='https://ottiaq.org' target='_blank' rel='noopener'>OTTIAQ</a>.",
     "menu": "Meniu",
     "message": "Mesaj",
     "name": "Nume",
