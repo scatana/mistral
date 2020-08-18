@@ -47,7 +47,8 @@
     "drivers-license": "Permis de conducere",
     "high-school-university-diploma": "Diplomă de liceu / facultate",
     "power-of-attorney": "Procură",
-    "transcript-of-records": "Foaie matricolă"
+    "transcript-of-records": "Foaie matricolă",
+    "passport": "Pașaport"
   },
   "strings": {
     "cash": "Numerar",

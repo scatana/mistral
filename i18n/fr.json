@@ -47,7 +47,8 @@
     "drivers-license": "Permis de conduire",
     "high-school-university-diploma": "Diplôme d'études secondaires / collégiales",
     "power-of-attorney": "Procuration",
-    "transcript-of-records": "Relevé de notes"
+    "transcript-of-records": "Relevé de notes",
+    "passport": "Passeport"
   },
   "strings": {
     "cash": "Argent comptant",

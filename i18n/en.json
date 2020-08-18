@@ -47,7 +47,8 @@
     "drivers-license": "Driver's License",
     "high-school-university-diploma": "High School / University Diploma",
     "power-of-attorney": "Power of Attorney",
-    "transcript-of-records": "Transcript of Records"
+    "transcript-of-records": "Transcript of Records",
+    "passport": "Passport"
   },
   "strings": {
     "cash": "Cash",
